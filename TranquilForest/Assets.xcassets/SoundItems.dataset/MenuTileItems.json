@@ -1,0 +1,63 @@
+﻿[
+    {
+        "Name": "Ocean Waves",
+        "AudioFile": "Waves",
+        "ImageName": "beach"
+    },
+   {
+        "Name": "Coffe Shop Murmur",
+        "AudioFile": "Murmur_01",
+        "ImageName": "crowd"
+    },
+    {
+        "Name": "Lake Shore",
+        "AudioFile": "Lake",
+        "ImageName": "lake"
+    },
+    {
+        "Name": "Music 1",
+        "AudioFile": "Music_1",
+        "ImageName": "music"
+    },
+    {
+        "Name": "Music 2",
+        "AudioFile": "Music_2",
+        "ImageName": "music"
+    },
+    {
+        "Name": "Rain",
+        "AudioFile": "Rain_2_Loop",
+        "ImageName": "rain"
+    },
+  {
+    "Name": "Running Stream",
+    "AudioFile": "Stream",
+    "ImageName": "river"
+  },
+  {
+    "Name": "Binaural (Relax)",
+    "AudioFile": "Binaural_Relax",
+    "ImageName": "beats"
+  },
+  {
+    "Name": "Binaural (Focus)",
+    "AudioFile": "Binaural_Focus",
+    "ImageName": "beats"
+  },
+    {
+    "Name": "Storm",
+    "AudioFile": "Storm",
+    "ImageName": "storm"
+  },
+  {
+    "Name": "Crickets",
+    "AudioFile": "Crickets",
+    "ImageName": "moon"
+  },
+    {
+    "Name": "Campfire",
+    "AudioFile": "Campfire",
+    "ImageName": "bonfire"
+  }
+
+  ]

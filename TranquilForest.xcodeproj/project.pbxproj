@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		551E60D32378B1AF00173DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E60D22378B1AF00173DAA /* AppDelegate.swift */; };
+		551E60D52378B1AF00173DAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E60D42378B1AF00173DAA /* SceneDelegate.swift */; };
+		551E60DA2378B1AF00173DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551E60D82378B1AF00173DAA /* Main.storyboard */; };
+		551E60DD2378B1AF00173DAA /* TranquilForest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 551E60DB2378B1AF00173DAA /* TranquilForest.xcdatamodeld */; };
+		551E60DF2378B1B100173DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551E60DE2378B1B100173DAA /* Assets.xcassets */; };
+		551E60E22378B1B100173DAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551E60E02378B1B100173DAA /* LaunchScreen.storyboard */; };
+		551E60ED2378B1B100173DAA /* TranquilForestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E60EC2378B1B100173DAA /* TranquilForestTests.swift */; };
+		5526BE0E23941CAF008D7581 /* Music_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5526BE0D23941CAF008D7581 /* Music_1.mp3 */; };
+		5526BE1223941CD7008D7581 /* Music_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5526BE1123941CD7008D7581 /* Music_2.mp3 */; };
+		552C098F238F369A006C6EFF /* ConstraintExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C098E238F369A006C6EFF /* ConstraintExtensions.swift */; };
+		5533F9262380E70B00142099 /* SoundItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533F9252380E70B00142099 /* SoundItemCell.swift */; };
+		5533F9282381F0BA00142099 /* SoundItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533F9272381F0BA00142099 /* SoundItem.swift */; };
+		5533F92A2381F19800142099 /* SoundItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533F9292381F19800142099 /* SoundItemSource.swift */; };
+		5533F92E238257E500142099 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533F92D238257E500142099 /* MainViewController.swift */; };
+		5533F9302384B95600142099 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533F92F2384B95600142099 /* AudioController.swift */; };
+		5533F9322384B9E800142099 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5533F9312384B9E800142099 /* AVFoundation.framework */; };
+		5533F93D238634B700142099 /* NotificationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533F93C238634B700142099 /* NotificationExtensions.swift */; };
+		554A944923A6D542000B5446 /* Crickets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 554A944623A6D542000B5446 /* Crickets.mp3 */; };
+		554A944A23A6D542000B5446 /* Stream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 554A944723A6D542000B5446 /* Stream.mp3 */; };
+		554A944B23A6D542000B5446 /* Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 554A944823A6D542000B5446 /* Waves.mp3 */; };
+		554A944F23A6D96A000B5446 /* Storm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 554A944D23A6D96A000B5446 /* Storm.mp3 */; };
+		554A945123A6D9AA000B5446 /* Campfire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 554A945023A6D9AA000B5446 /* Campfire.mp3 */; };
+		554A945323A6DBBC000B5446 /* Lake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 554A945223A6DBBC000B5446 /* Lake.mp3 */; };
+		5564867923B2ACFE00C10F29 /* CellStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5564867823B2ACFE00C10F29 /* CellStateStore.swift */; };
+		5564867B23B5436700C10F29 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5564867A23B5436700C10F29 /* InfoViewController.swift */; };
+		5564867D23B5443600C10F29 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5564867C23B5443600C10F29 /* DonateViewController.swift */; };
+		5598D8DA23A863480009D51D /* Binaural_Focus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5598D8D923A863480009D51D /* Binaural_Focus.mp3 */; };
+		55A22CC223B2594E007F7764 /* CellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A22CC123B2594E007F7764 /* CellState.swift */; };
+		55AF52582380C8B600F1EBFD /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AF52572380C8B600F1EBFD /* FBAudienceNetwork.framework */; };
+		55AF52592380C8B600F1EBFD /* FBAudienceNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55AF52572380C8B600F1EBFD /* FBAudienceNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55BD8F792396123F000EE389 /* Rain_2_Loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55BD8F782396123E000EE389 /* Rain_2_Loop.mp3 */; };
+		55BD8F7D239615BC000EE389 /* Murmur_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55BD8F7A239615BB000EE389 /* Murmur_01.mp3 */; };
+		55BD8F7E239615BC000EE389 /* Binaural_Relax.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55BD8F7B239615BC000EE389 /* Binaural_Relax.mp3 */; };
+		55BD8F7F239615BC000EE389 /* Small_Waterfall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55BD8F7C239615BC000EE389 /* Small_Waterfall.mp3 */; };
+		6944D6E6854BE4EF9B3424A4 /* libPods-TranquilForestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D42CC5BA383998BAA55A04D2 /* libPods-TranquilForestTests.a */; };
+		8AE3CAA531B5FE7482B8BE9F /* libPods-TranquilForest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A6626415F5866CBE8B7354 /* libPods-TranquilForest.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		551E60E92378B1B100173DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551E60C72378B1AF00173DAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 551E60CE2378B1AF00173DAA;
+			remoteInfo = TranquilForest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55AF525A2380C8B600F1EBFD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55AF52592380C8B600F1EBFD /* FBAudienceNetwork.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09A6626415F5866CBE8B7354 /* libPods-TranquilForest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TranquilForest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5BCCAE0CB952ED8A5AB349 /* Pods-TranquilForestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranquilForestTests.release.xcconfig"; path = "Target Support Files/Pods-TranquilForestTests/Pods-TranquilForestTests.release.xcconfig"; sourceTree = "<group>"; };
+		551E60CF2378B1AF00173DAA /* TranquilForest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranquilForest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		551E60D22378B1AF00173DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		551E60D42378B1AF00173DAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		551E60D92378B1AF00173DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		551E60DC2378B1AF00173DAA /* TranquilForest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TranquilForest.xcdatamodel; sourceTree = "<group>"; };
+		551E60DE2378B1B100173DAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		551E60E12378B1B100173DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		551E60E32378B1B100173DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		551E60E82378B1B100173DAA /* TranquilForestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranquilForestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		551E60EC2378B1B100173DAA /* TranquilForestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranquilForestTests.swift; sourceTree = "<group>"; };
+		551E60EE2378B1B100173DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5526BE0D23941CAF008D7581 /* Music_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music_1.mp3; sourceTree = "<group>"; };
+		5526BE1123941CD7008D7581 /* Music_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music_2.mp3; sourceTree = "<group>"; };
+		552C098E238F369A006C6EFF /* ConstraintExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintExtensions.swift; sourceTree = "<group>"; };
+		5533F9252380E70B00142099 /* SoundItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundItemCell.swift; sourceTree = "<group>"; };
+		5533F9272381F0BA00142099 /* SoundItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundItem.swift; sourceTree = "<group>"; };
+		5533F9292381F19800142099 /* SoundItemSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundItemSource.swift; sourceTree = "<group>"; };
+		5533F92D238257E500142099 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5533F92F2384B95600142099 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		5533F9312384B9E800142099 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5533F93C238634B700142099 /* NotificationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtensions.swift; sourceTree = "<group>"; };
+		554A944623A6D542000B5446 /* Crickets.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Crickets.mp3; sourceTree = "<group>"; };
+		554A944723A6D542000B5446 /* Stream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Stream.mp3; sourceTree = "<group>"; };
+		554A944823A6D542000B5446 /* Waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Waves.mp3; sourceTree = "<group>"; };
+		554A944D23A6D96A000B5446 /* Storm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Storm.mp3; sourceTree = "<group>"; };
+		554A945023A6D9AA000B5446 /* Campfire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Campfire.mp3; sourceTree = "<group>"; };
+		554A945223A6DBBC000B5446 /* Lake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lake.mp3; sourceTree = "<group>"; };
+		5564867823B2ACFE00C10F29 /* CellStateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellStateStore.swift; sourceTree = "<group>"; };
+		5564867A23B5436700C10F29 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		5564867C23B5443600C10F29 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
+		5598D8D923A863480009D51D /* Binaural_Focus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Binaural_Focus.mp3; sourceTree = "<group>"; };
+		55A22CC123B2594E007F7764 /* CellState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellState.swift; sourceTree = "<group>"; };
+		55AF524E2380C67A00F1EBFD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/FBSDKCoreKit-bmjqvtlavleqffhaffynhqkdnxpw/Build/Products/Debug-iphonesimulator/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		55AF52572380C8B600F1EBFD /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = Pods/FBAudienceNetwork/Static/FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		55BD8F782396123E000EE389 /* Rain_2_Loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rain_2_Loop.mp3; sourceTree = "<group>"; };
+		55BD8F7A239615BB000EE389 /* Murmur_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Murmur_01.mp3; sourceTree = "<group>"; };
+		55BD8F7B239615BC000EE389 /* Binaural_Relax.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Binaural_Relax.mp3; sourceTree = "<group>"; };
+		55BD8F7C239615BC000EE389 /* Small_Waterfall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Small_Waterfall.mp3; sourceTree = "<group>"; };
+		6BFFC0BFB9A9BD0DEB7FE702 /* Pods-TranquilForestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranquilForestTests.debug.xcconfig"; path = "Target Support Files/Pods-TranquilForestTests/Pods-TranquilForestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D601BDAA42C793BD2C7F91C /* Pods_TranquilForest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranquilForest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7D51D3712CB84B289C6C0C /* Pods-TranquilForest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranquilForest.release.xcconfig"; path = "Target Support Files/Pods-TranquilForest/Pods-TranquilForest.release.xcconfig"; sourceTree = "<group>"; };
+		D42CC5BA383998BAA55A04D2 /* libPods-TranquilForestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TranquilForestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD294B6F86645404BDB0AC28 /* Pods-TranquilForest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranquilForest.debug.xcconfig"; path = "Target Support Files/Pods-TranquilForest/Pods-TranquilForest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		551E60CC2378B1AF00173DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AF52582380C8B600F1EBFD /* FBAudienceNetwork.framework in Frameworks */,
+				8AE3CAA531B5FE7482B8BE9F /* libPods-TranquilForest.a in Frameworks */,
+				5533F9322384B9E800142099 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		551E60E52378B1B100173DAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6944D6E6854BE4EF9B3424A4 /* libPods-TranquilForestTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		551E60C62378B1AF00173DAA = {
+			isa = PBXGroup;
+			children = (
+				551E60D12378B1AF00173DAA /* TranquilForest */,
+				551E60EB2378B1B100173DAA /* TranquilForestTests */,
+				551E60D02378B1AF00173DAA /* Products */,
+				995B7D3AE7C761E5E94BCEBE /* Pods */,
+				BDE71AD5DAEA0744436D8260 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		551E60D02378B1AF00173DAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				551E60CF2378B1AF00173DAA /* TranquilForest.app */,
+				551E60E82378B1B100173DAA /* TranquilForestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		551E60D12378B1AF00173DAA /* TranquilForest */ = {
+			isa = PBXGroup;
+			children = (
+				5533F9332384BB5900142099 /* Audio */,
+				551E60D22378B1AF00173DAA /* AppDelegate.swift */,
+				551E60D42378B1AF00173DAA /* SceneDelegate.swift */,
+				551E60D82378B1AF00173DAA /* Main.storyboard */,
+				551E60DE2378B1B100173DAA /* Assets.xcassets */,
+				551E60E02378B1B100173DAA /* LaunchScreen.storyboard */,
+				551E60E32378B1B100173DAA /* Info.plist */,
+				551E60DB2378B1AF00173DAA /* TranquilForest.xcdatamodeld */,
+				5533F9252380E70B00142099 /* SoundItemCell.swift */,
+				5533F9272381F0BA00142099 /* SoundItem.swift */,
+				5533F9292381F19800142099 /* SoundItemSource.swift */,
+				5533F92D238257E500142099 /* MainViewController.swift */,
+				5533F92F2384B95600142099 /* AudioController.swift */,
+				5533F93C238634B700142099 /* NotificationExtensions.swift */,
+				552C098E238F369A006C6EFF /* ConstraintExtensions.swift */,
+				55A22CC123B2594E007F7764 /* CellState.swift */,
+				5564867823B2ACFE00C10F29 /* CellStateStore.swift */,
+				5564867A23B5436700C10F29 /* InfoViewController.swift */,
+				5564867C23B5443600C10F29 /* DonateViewController.swift */,
+			);
+			path = TranquilForest;
+			sourceTree = "<group>";
+		};
+		551E60EB2378B1B100173DAA /* TranquilForestTests */ = {
+			isa = PBXGroup;
+			children = (
+				551E60EC2378B1B100173DAA /* TranquilForestTests.swift */,
+				551E60EE2378B1B100173DAA /* Info.plist */,
+			);
+			path = TranquilForestTests;
+			sourceTree = "<group>";
+		};
+		5533F9332384BB5900142099 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				5598D8D923A863480009D51D /* Binaural_Focus.mp3 */,
+				554A945223A6DBBC000B5446 /* Lake.mp3 */,
+				554A945023A6D9AA000B5446 /* Campfire.mp3 */,
+				554A944623A6D542000B5446 /* Crickets.mp3 */,
+				554A944D23A6D96A000B5446 /* Storm.mp3 */,
+				554A944723A6D542000B5446 /* Stream.mp3 */,
+				554A944823A6D542000B5446 /* Waves.mp3 */,
+				55BD8F7B239615BC000EE389 /* Binaural_Relax.mp3 */,
+				55BD8F7A239615BB000EE389 /* Murmur_01.mp3 */,
+				55BD8F7C239615BC000EE389 /* Small_Waterfall.mp3 */,
+				55BD8F782396123E000EE389 /* Rain_2_Loop.mp3 */,
+				5526BE1123941CD7008D7581 /* Music_2.mp3 */,
+				5526BE0D23941CAF008D7581 /* Music_1.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		995B7D3AE7C761E5E94BCEBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD294B6F86645404BDB0AC28 /* Pods-TranquilForest.debug.xcconfig */,
+				8E7D51D3712CB84B289C6C0C /* Pods-TranquilForest.release.xcconfig */,
+				6BFFC0BFB9A9BD0DEB7FE702 /* Pods-TranquilForestTests.debug.xcconfig */,
+				3A5BCCAE0CB952ED8A5AB349 /* Pods-TranquilForestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BDE71AD5DAEA0744436D8260 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5533F9312384B9E800142099 /* AVFoundation.framework */,
+				55AF52572380C8B600F1EBFD /* FBAudienceNetwork.framework */,
+				55AF524E2380C67A00F1EBFD /* FBSDKCoreKit.framework */,
+				7D601BDAA42C793BD2C7F91C /* Pods_TranquilForest.framework */,
+				09A6626415F5866CBE8B7354 /* libPods-TranquilForest.a */,
+				D42CC5BA383998BAA55A04D2 /* libPods-TranquilForestTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		551E60CE2378B1AF00173DAA /* TranquilForest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 551E60F12378B1B100173DAA /* Build configuration list for PBXNativeTarget "TranquilForest" */;
+			buildPhases = (
+				3742B3123CA38AAA2D5B3C41 /* [CP] Check Pods Manifest.lock */,
+				551E60CB2378B1AF00173DAA /* Sources */,
+				551E60CC2378B1AF00173DAA /* Frameworks */,
+				551E60CD2378B1AF00173DAA /* Resources */,
+				55AF525A2380C8B600F1EBFD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TranquilForest;
+			productName = TranquilForest;
+			productReference = 551E60CF2378B1AF00173DAA /* TranquilForest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		551E60E72378B1B100173DAA /* TranquilForestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 551E60F42378B1B100173DAA /* Build configuration list for PBXNativeTarget "TranquilForestTests" */;
+			buildPhases = (
+				975B7E4D31C45E16BD60E21C /* [CP] Check Pods Manifest.lock */,
+				551E60E42378B1B100173DAA /* Sources */,
+				551E60E52378B1B100173DAA /* Frameworks */,
+				551E60E62378B1B100173DAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				551E60EA2378B1B100173DAA /* PBXTargetDependency */,
+			);
+			name = TranquilForestTests;
+			productName = TranquilForestTests;
+			productReference = 551E60E82378B1B100173DAA /* TranquilForestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		551E60C72378B1AF00173DAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "David Ritchie";
+				TargetAttributes = {
+					551E60CE2378B1AF00173DAA = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					551E60E72378B1B100173DAA = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 551E60CE2378B1AF00173DAA;
+					};
+				};
+			};
+			buildConfigurationList = 551E60CA2378B1AF00173DAA /* Build configuration list for PBXProject "TranquilForest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 551E60C62378B1AF00173DAA;
+			productRefGroup = 551E60D02378B1AF00173DAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				551E60CE2378B1AF00173DAA /* TranquilForest */,
+				551E60E72378B1B100173DAA /* TranquilForestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		551E60CD2378B1AF00173DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551E60E22378B1B100173DAA /* LaunchScreen.storyboard in Resources */,
+				55BD8F792396123F000EE389 /* Rain_2_Loop.mp3 in Resources */,
+				55BD8F7F239615BC000EE389 /* Small_Waterfall.mp3 in Resources */,
+				5526BE0E23941CAF008D7581 /* Music_1.mp3 in Resources */,
+				554A944F23A6D96A000B5446 /* Storm.mp3 in Resources */,
+				554A945123A6D9AA000B5446 /* Campfire.mp3 in Resources */,
+				554A944A23A6D542000B5446 /* Stream.mp3 in Resources */,
+				551E60DF2378B1B100173DAA /* Assets.xcassets in Resources */,
+				551E60DA2378B1AF00173DAA /* Main.storyboard in Resources */,
+				5526BE1223941CD7008D7581 /* Music_2.mp3 in Resources */,
+				55BD8F7D239615BC000EE389 /* Murmur_01.mp3 in Resources */,
+				554A944B23A6D542000B5446 /* Waves.mp3 in Resources */,
+				554A945323A6DBBC000B5446 /* Lake.mp3 in Resources */,
+				5598D8DA23A863480009D51D /* Binaural_Focus.mp3 in Resources */,
+				554A944923A6D542000B5446 /* Crickets.mp3 in Resources */,
+				55BD8F7E239615BC000EE389 /* Binaural_Relax.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		551E60E62378B1B100173DAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3742B3123CA38AAA2D5B3C41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TranquilForest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		975B7E4D31C45E16BD60E21C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TranquilForestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		551E60CB2378B1AF00173DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552C098F238F369A006C6EFF /* ConstraintExtensions.swift in Sources */,
+				5564867D23B5443600C10F29 /* DonateViewController.swift in Sources */,
+				551E60D32378B1AF00173DAA /* AppDelegate.swift in Sources */,
+				5533F93D238634B700142099 /* NotificationExtensions.swift in Sources */,
+				551E60DD2378B1AF00173DAA /* TranquilForest.xcdatamodeld in Sources */,
+				5533F92A2381F19800142099 /* SoundItemSource.swift in Sources */,
+				5564867923B2ACFE00C10F29 /* CellStateStore.swift in Sources */,
+				55A22CC223B2594E007F7764 /* CellState.swift in Sources */,
+				5533F92E238257E500142099 /* MainViewController.swift in Sources */,
+				5533F9262380E70B00142099 /* SoundItemCell.swift in Sources */,
+				5564867B23B5436700C10F29 /* InfoViewController.swift in Sources */,
+				5533F9282381F0BA00142099 /* SoundItem.swift in Sources */,
+				5533F9302384B95600142099 /* AudioController.swift in Sources */,
+				551E60D52378B1AF00173DAA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		551E60E42378B1B100173DAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551E60ED2378B1B100173DAA /* TranquilForestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		551E60EA2378B1B100173DAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 551E60CE2378B1AF00173DAA /* TranquilForest */;
+			targetProxy = 551E60E92378B1B100173DAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		551E60D82378B1AF00173DAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				551E60D92378B1AF00173DAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		551E60E02378B1B100173DAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				551E60E12378B1B100173DAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		551E60EF2378B1B100173DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		551E60F02378B1B100173DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		551E60F22378B1B100173DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD294B6F86645404BDB0AC28 /* Pods-TranquilForest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUT72ZXK9C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TranquilForest",
+					"$(PROJECT_DIR)/Pods/FBAudienceNetwork/Static",
+				);
+				INFOPLIST_FILE = TranquilForest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xynera.TranquilForest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		551E60F32378B1B100173DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7D51D3712CB84B289C6C0C /* Pods-TranquilForest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUT72ZXK9C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TranquilForest",
+					"$(PROJECT_DIR)/Pods/FBAudienceNetwork/Static",
+				);
+				INFOPLIST_FILE = TranquilForest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xynera.TranquilForest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		551E60F52378B1B100173DAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BFFC0BFB9A9BD0DEB7FE702 /* Pods-TranquilForestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUT72ZXK9C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TranquilForest",
+				);
+				INFOPLIST_FILE = TranquilForestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xynera.TranquilForestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TranquilForest.app/TranquilForest";
+			};
+			name = Debug;
+		};
+		551E60F62378B1B100173DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5BCCAE0CB952ED8A5AB349 /* Pods-TranquilForestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZUT72ZXK9C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TranquilForest",
+				);
+				INFOPLIST_FILE = TranquilForestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xynera.TranquilForestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TranquilForest.app/TranquilForest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		551E60CA2378B1AF00173DAA /* Build configuration list for PBXProject "TranquilForest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				551E60EF2378B1B100173DAA /* Debug */,
+				551E60F02378B1B100173DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		551E60F12378B1B100173DAA /* Build configuration list for PBXNativeTarget "TranquilForest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				551E60F22378B1B100173DAA /* Debug */,
+				551E60F32378B1B100173DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		551E60F42378B1B100173DAA /* Build configuration list for PBXNativeTarget "TranquilForestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				551E60F52378B1B100173DAA /* Debug */,
+				551E60F62378B1B100173DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		551E60DB2378B1AF00173DAA /* TranquilForest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				551E60DC2378B1AF00173DAA /* TranquilForest.xcdatamodel */,
+			);
+			currentVersion = 551E60DC2378B1AF00173DAA /* TranquilForest.xcdatamodel */;
+			path = TranquilForest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 551E60C72378B1AF00173DAA /* Project object */;
+}
