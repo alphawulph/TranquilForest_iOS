@@ -17,14 +17,14 @@ class MainViewController: UIViewController, FBAdViewDelegate {
     
     var adView: FBAdView?
     var altAdView: UIImageView?
-    var soundItems: [SoundItem] = []
-    var dataSource: SoundItemSource
+    var soundItems: [SoundItem]?
+    var dataSource: SoundItemSource?
     var audioController: AudioController
     var paused: Bool = false
     var timer: Timer?
     
     required init?(coder aDecoder: NSCoder) {
-        dataSource = SoundItemSource(soundItems: soundItems)
+        //dataSource = SoundItemSource(soundItems: soundItems)
         audioController = AudioController()
         super.init(coder: aDecoder)
     }
@@ -34,17 +34,22 @@ class MainViewController: UIViewController, FBAdViewDelegate {
         
         buildAdView()
         
-        if let data = NSDataAsset(name: "SoundItems")?.data {
-            let soundItemsText = String(data: data, encoding: .utf8)
-            
-            soundItems = try! JSONDecoder().decode([SoundItem].self, from: soundItemsText!.data(using: String.Encoding.utf8)!)
-            
-            dataSource = SoundItemSource(soundItems: soundItems)
-            tableView.dataSource = dataSource
-        }
-
+            if let data = NSDataAsset(name: "SoundItems")?.data {
+                do{
+                    let soundItemsText = String(data: data, encoding: .utf8)
+                    
+                    soundItems = try JSONDecoder().decode([SoundItem].self, from: soundItemsText!.data(using: String.Encoding.utf8)!)
+                    
+                    dataSource = SoundItemSource(soundItems: soundItems!)
+                    tableView.dataSource = dataSource
+                } catch {
+                    os_log("%{PUBLIC}@", log: OSLog.default, type: .error, "Unexpected error: \(error).")
+                    
+                }
+            }
+        
         audioController = AudioController()
-}
+    }
     
     func buildAdView(){
         adView = FBAdView(placementID: "2352373935076505_2352376368409595", adSize: kFBAdSizeHeight50Banner, rootViewController: self)
@@ -69,7 +74,7 @@ class MainViewController: UIViewController, FBAdViewDelegate {
     func adView(_ adView: FBAdView, didFailWithError error: Error) {
         createYoutubeBanner()
         
-        os_log("%{PUBLIC}@)", log: OSLog.default, type: .error, error.localizedDescription)
+        os_log("%{PUBLIC}@", log: OSLog.default, type: .error, error.localizedDescription)
     }
     
     func createYoutubeBanner(){

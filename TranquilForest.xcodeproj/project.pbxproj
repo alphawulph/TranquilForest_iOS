@@ -35,14 +35,10 @@
 		5564867D23B5443600C10F29 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5564867C23B5443600C10F29 /* DonateViewController.swift */; };
 		5598D8DA23A863480009D51D /* Binaural_Focus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5598D8D923A863480009D51D /* Binaural_Focus.mp3 */; };
 		55A22CC223B2594E007F7764 /* CellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A22CC123B2594E007F7764 /* CellState.swift */; };
-		55AF52582380C8B600F1EBFD /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AF52572380C8B600F1EBFD /* FBAudienceNetwork.framework */; };
-		55AF52592380C8B600F1EBFD /* FBAudienceNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55AF52572380C8B600F1EBFD /* FBAudienceNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55BD8F792396123F000EE389 /* Rain_2_Loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55BD8F782396123E000EE389 /* Rain_2_Loop.mp3 */; };
 		55BD8F7D239615BC000EE389 /* Murmur_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55BD8F7A239615BB000EE389 /* Murmur_01.mp3 */; };
 		55BD8F7E239615BC000EE389 /* Binaural_Relax.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55BD8F7B239615BC000EE389 /* Binaural_Relax.mp3 */; };
 		55BD8F7F239615BC000EE389 /* Small_Waterfall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55BD8F7C239615BC000EE389 /* Small_Waterfall.mp3 */; };
-		6944D6E6854BE4EF9B3424A4 /* libPods-TranquilForestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D42CC5BA383998BAA55A04D2 /* libPods-TranquilForestTests.a */; };
-		8AE3CAA531B5FE7482B8BE9F /* libPods-TranquilForest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A6626415F5866CBE8B7354 /* libPods-TranquilForest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +58,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				55AF52592380C8B600F1EBFD /* FBAudienceNetwork.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,9 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		09A6626415F5866CBE8B7354 /* libPods-TranquilForest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TranquilForest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5BCCAE0CB952ED8A5AB349 /* Pods-TranquilForestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranquilForestTests.release.xcconfig"; path = "Target Support Files/Pods-TranquilForestTests/Pods-TranquilForestTests.release.xcconfig"; sourceTree = "<group>"; };
-		551E60CF2378B1AF00173DAA /* TranquilForest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranquilForest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		551E60CF2378B1AF00173DAA /* Tranquil Forest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tranquil Forest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		551E60D22378B1AF00173DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		551E60D42378B1AF00173DAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		551E60D92378B1AF00173DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,7 +107,6 @@
 		6BFFC0BFB9A9BD0DEB7FE702 /* Pods-TranquilForestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranquilForestTests.debug.xcconfig"; path = "Target Support Files/Pods-TranquilForestTests/Pods-TranquilForestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D601BDAA42C793BD2C7F91C /* Pods_TranquilForest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranquilForest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7D51D3712CB84B289C6C0C /* Pods-TranquilForest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranquilForest.release.xcconfig"; path = "Target Support Files/Pods-TranquilForest/Pods-TranquilForest.release.xcconfig"; sourceTree = "<group>"; };
-		D42CC5BA383998BAA55A04D2 /* libPods-TranquilForestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TranquilForestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD294B6F86645404BDB0AC28 /* Pods-TranquilForest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranquilForest.debug.xcconfig"; path = "Target Support Files/Pods-TranquilForest/Pods-TranquilForest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,8 +115,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55AF52582380C8B600F1EBFD /* FBAudienceNetwork.framework in Frameworks */,
-				8AE3CAA531B5FE7482B8BE9F /* libPods-TranquilForest.a in Frameworks */,
 				5533F9322384B9E800142099 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,7 +123,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6944D6E6854BE4EF9B3424A4 /* libPods-TranquilForestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +143,7 @@
 		551E60D02378B1AF00173DAA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				551E60CF2378B1AF00173DAA /* TranquilForest.app */,
+				551E60CF2378B1AF00173DAA /* Tranquil Forest.app */,
 				551E60E82378B1B100173DAA /* TranquilForestTests.xctest */,
 			);
 			name = Products;
@@ -232,8 +222,6 @@
 				55AF52572380C8B600F1EBFD /* FBAudienceNetwork.framework */,
 				55AF524E2380C67A00F1EBFD /* FBSDKCoreKit.framework */,
 				7D601BDAA42C793BD2C7F91C /* Pods_TranquilForest.framework */,
-				09A6626415F5866CBE8B7354 /* libPods-TranquilForest.a */,
-				D42CC5BA383998BAA55A04D2 /* libPods-TranquilForestTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,7 +245,7 @@
 			);
 			name = TranquilForest;
 			productName = TranquilForest;
-			productReference = 551E60CF2378B1AF00173DAA /* TranquilForest.app */;
+			productReference = 551E60CF2378B1AF00173DAA /* Tranquil Forest.app */;
 			productType = "com.apple.product-type.application";
 		};
 		551E60E72378B1B100173DAA /* TranquilForestTests */ = {
@@ -577,6 +565,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = ZUT72ZXK9C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,12 +573,14 @@
 					"$(PROJECT_DIR)/Pods/FBAudienceNetwork/Static",
 				);
 				INFOPLIST_FILE = TranquilForest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xynera.TranquilForest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.02;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyneravideo.tranquilforest;
+				PRODUCT_NAME = "Tranquil Forest";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -601,6 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = ZUT72ZXK9C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -608,12 +600,14 @@
 					"$(PROJECT_DIR)/Pods/FBAudienceNetwork/Static",
 				);
 				INFOPLIST_FILE = TranquilForest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xynera.TranquilForest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.02;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyneravideo.tranquilforest;
+				PRODUCT_NAME = "Tranquil Forest";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
