@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5514B3392489280300C0D382 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5514B3382489280300C0D382 /* MainViewController.swift */; };
 		551E60D32378B1AF00173DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E60D22378B1AF00173DAA /* AppDelegate.swift */; };
 		551E60D52378B1AF00173DAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E60D42378B1AF00173DAA /* SceneDelegate.swift */; };
 		551E60DA2378B1AF00173DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551E60D82378B1AF00173DAA /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		3A5BCCAE0CB952ED8A5AB349 /* Pods-TranquilForestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranquilForestTests.release.xcconfig"; path = "Target Support Files/Pods-TranquilForestTests/Pods-TranquilForestTests.release.xcconfig"; sourceTree = "<group>"; };
+		5514B3382489280300C0D382 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		551E60CF2378B1AF00173DAA /* Tranquil Forest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tranquil Forest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		551E60D22378B1AF00173DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		551E60D42378B1AF00173DAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,8 +100,6 @@
 		5564867C23B5443600C10F29 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		5598D8D923A863480009D51D /* Binaural_Focus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Binaural_Focus.mp3; sourceTree = "<group>"; };
 		55A22CC123B2594E007F7764 /* CellState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellState.swift; sourceTree = "<group>"; };
-		55AF524E2380C67A00F1EBFD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/FBSDKCoreKit-bmjqvtlavleqffhaffynhqkdnxpw/Build/Products/Debug-iphonesimulator/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
-		55AF52572380C8B600F1EBFD /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = Pods/FBAudienceNetwork/Static/FBAudienceNetwork.framework; sourceTree = "<group>"; };
 		55BD8F782396123E000EE389 /* Rain_2_Loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rain_2_Loop.mp3; sourceTree = "<group>"; };
 		55BD8F7A239615BB000EE389 /* Murmur_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Murmur_01.mp3; sourceTree = "<group>"; };
 		55BD8F7B239615BC000EE389 /* Binaural_Relax.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Binaural_Relax.mp3; sourceTree = "<group>"; };
@@ -164,6 +164,7 @@
 				5533F9272381F0BA00142099 /* SoundItem.swift */,
 				5533F9292381F19800142099 /* SoundItemSource.swift */,
 				5533F92D238257E500142099 /* MainViewController.swift */,
+				5514B3382489280300C0D382 /* MainViewController.swift */,
 				5533F92F2384B95600142099 /* AudioController.swift */,
 				5533F93C238634B700142099 /* NotificationExtensions.swift */,
 				552C098E238F369A006C6EFF /* ConstraintExtensions.swift */,
@@ -219,8 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				5533F9312384B9E800142099 /* AVFoundation.framework */,
-				55AF52572380C8B600F1EBFD /* FBAudienceNetwork.framework */,
-				55AF524E2380C67A00F1EBFD /* FBSDKCoreKit.framework */,
 				7D601BDAA42C793BD2C7F91C /* Pods_TranquilForest.framework */,
 			);
 			name = Frameworks;
@@ -399,6 +398,7 @@
 				5564867923B2ACFE00C10F29 /* CellStateStore.swift in Sources */,
 				55A22CC223B2594E007F7764 /* CellState.swift in Sources */,
 				5533F92E238257E500142099 /* MainViewController.swift in Sources */,
+				5514B3392489280300C0D382 /* MainViewController.swift in Sources */,
 				5533F9262380E70B00142099 /* SoundItemCell.swift in Sources */,
 				5564867B23B5436700C10F29 /* InfoViewController.swift in Sources */,
 				5533F9282381F0BA00142099 /* SoundItem.swift in Sources */,
@@ -495,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -549,7 +549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -565,7 +565,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = ZUT72ZXK9C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -578,7 +578,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.02;
+				MARKETING_VERSION = 1.06;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xyneravideo.tranquilforest;
 				PRODUCT_NAME = "Tranquil Forest";
 				SWIFT_VERSION = 5.0;
@@ -592,7 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = ZUT72ZXK9C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -605,7 +605,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.02;
+				MARKETING_VERSION = 1.06;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xyneravideo.tranquilforest;
 				PRODUCT_NAME = "Tranquil Forest";
 				SWIFT_VERSION = 5.0;
